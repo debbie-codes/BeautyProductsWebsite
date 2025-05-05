@@ -114,8 +114,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px auto; 
-    animation: fadeInBottom 1.5s ease;
+    margin: 30px auto; 
 }
 
 .main-image > img {
@@ -136,7 +135,7 @@ a{
     color: #ec26b1;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -147,7 +146,86 @@ a{
 }
 
 .main-text p{
-    
+    color: #5a5a5a;
+    margin: 10px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main-text a{
+    font-weight: 800;
+    font-size: 24px;
+    color: #333333;
+    border-bottom: 1px solid #646464;
+    margin-top: 30px;
+}
+
+/* The Product Grid Section============ */
+
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.product-grid-box{
+    position: relative;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid-text{
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    transform: translate(-14%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #f3f3f3;
+}
+
+.product-grid-box img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.product-grid-box1{
+    background-color: #5a3e2b;
+}
+
+.product-grid-text span{
+    color: #ffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.product-grid-text a{
+    font-weight: 600;
+    color: #f2f3f4 ;
+    margin-top: 10px;
+}
+
+.product-grid-text strong{
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.product-grid-box2{
+    background-color: #F5F5DC
 }
 
 
