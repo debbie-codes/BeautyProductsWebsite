@@ -186,7 +186,7 @@ a{
 
 .product-grid-text{
     position: absolute;
-    left: 14%;
+    left: 8%;
     top: 50%;
     transform: translate(-14%, -50%);
     display: flex;
@@ -194,6 +194,7 @@ a{
     align-items: flex-start;
     justify-content: center;
     color: #f3f3f3;
+    max-width: 150px;
 }
 
 .product-grid-box img{
@@ -228,5 +229,48 @@ a{
     background-color: #F5F5DC
 }
 
+/* The new products section============= */
+#new-products{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.new-p-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.new-p-heading h3{
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 800;
+}
+
+.new-p-heading ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.new-p-heading li{
+    padding: 2px 20px;
+    border-radius: 4px;
+    margin: 0px 3px;
+    color: #333333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.new-p-heading li.active{
+    background-color: #f4ad43;
+}
 
  
