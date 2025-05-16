@@ -306,12 +306,9 @@ a{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
     position: relative;
-    transition: transform 0.3s ease;
   }
   
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
+  
   
   .product-image {
     position: relative;
@@ -414,8 +411,13 @@ a{
     grid-row: 1/3;
     background-color: #ffff;
   }
+
   .product-grid-half .product-grid-box2{
     background-color: #f3ced2;
+  }
+
+  .product-grid-half .product-grid-box3{
+    background-color: #f1bca7;
   }
 
   .product-grid-half .product-grid-box1 .product-grid-text{
@@ -443,5 +445,103 @@ a{
   .product-grid-half a{
     color: #000;
   }
+
+  /*The Popular Products Heading Section=============== */
+
+  #popular-product{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .popular-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .popular-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border: 10px;
+  }
+
+  .popular-heading h3{
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 800;
+  }
+
+  .popular-heading a{
+    color: #5a5a5a;
+    font-size: 0.9rem;
+  }
+
+
+.popular-product-box{
+    position: relative;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-text{
+    position: absolute;
+    left: 1%;
+    top: 30%;
+    transform: translate(10%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #000;
+    max-width: 150px;
+}
+
+.product-grid-box img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.popular-product .popular-product-box1{
+    background-color: #7f5092;
+}
+
+.popular-product-text span{
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.popular-product-text a{
+    font-weight: 600;
+    color: #000 ;
+    margin-top: 10px;
+}
+
+.popular-product-text strong{
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.popular-product .popular-product-box2{
+    background-color: #fff
+}
+
+.popular-product .popular-product-box3{
+    background-color: #d3cbc8
+}
 
   
