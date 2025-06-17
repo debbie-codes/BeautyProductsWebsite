@@ -548,3 +548,52 @@ a{
   background-color: #f1bca7;
 }
   
+/*===========The Partner Section=========*/
+#partner{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.partner-heading h3{
+  font-size: 1.56rem;
+  color: #202020;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  grid-gap: 15px;
+}
+
+.logo-container img{
+  height: 100px;
+  object-position: center;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+
+.logo-container img:hover{
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.product-grid-2{
+  max-width: 900px;
+  max-height: 900px;
+  width: 90%;
+  height: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
